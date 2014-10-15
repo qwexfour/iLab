@@ -1,15 +1,17 @@
 #include <stdlib.h>
+#include <math.h>
 
 #ifndef MYSTACK
 #define MYSTACK
 
-const int STACK_IS_EMPTY = -32222;
-
 struct mystack
 {
     struct mystackval* last = NULL;
-    int pop();
-    void push(int a);
+    double pop();
+    int push(double a);
     void delall();
 };
+
+struct mystackval;
+
 #endif // MYSTACK

@@ -4,43 +4,40 @@
 struct mystack
 {
     struct mystackval* last = NULL;
-    int pop();
-    void push(int a);
+    double pop();
+    int push(double a);
     void delall();
 };
 */
 struct mystackval
 {
-    int value;
+    double value;
     struct mystackval* previous = NULL;
 };
 
 
-void mystack::push(int a)
+int mystack::push(double a)
 {
 
     struct mystackval* newEl = (struct mystackval*)calloc(1, sizeof(struct mystackval));
     struct mystackval* before;
-    if (last != NULL)
-    {
-        before = last;
-    }
-    else
-        before = NULL;
-
+    if (newEl == NULL)
+        return 0;
+    before = last;
     last = newEl;
     newEl->value = a;
     newEl->previous = before;
+    return 1;
 }
 
 
 
-int mystack::pop()
+double mystack::pop()
 {
-    int result;
+    double result;
     struct mystackval* newLast;
     if (last == NULL)
-        result = STACK_IS_EMPTY;
+        result = NAN;
     else
     {
         result =  last->value;
