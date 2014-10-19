@@ -5,7 +5,6 @@ int main()
 {
     int i;
     struct mystack st;
-    //some
 
     printf("Number of el is %i\nEls are ", st.getNumberOfEl());
     for (i = 0; i < 10; i++)

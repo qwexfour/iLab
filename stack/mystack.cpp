@@ -4,7 +4,6 @@
 struct mystack
 {
     struct mystackval* last = NULL;
-    ппопрлрлорло
     double pop();
     int push(double a);
     void delall();
