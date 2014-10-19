@@ -6,10 +6,15 @@
 
 struct mystack
 {
-    struct mystackval* last = NULL;
-    double pop();
-    int push(double a);
-    void delall();
+    private:
+        struct mystackval* last = NULL;
+        long numberOfEl;
+    public:
+        mystack();
+        double pop();
+        int push(double a);
+        void delall();
+        long getNumberOfEl();
 };
 
 struct mystackval;

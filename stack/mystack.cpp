@@ -16,6 +16,12 @@ struct mystackval
 };
 
 
+mystack::mystack()
+{
+    numberOfEl = 0;
+}
+
+
 int mystack::push(double a)
 {
 
@@ -27,6 +33,7 @@ int mystack::push(double a)
     last = newEl;
     newEl->value = a;
     newEl->previous = before;
+    numberOfEl++;
     return 1;
 }
 
@@ -44,6 +51,7 @@ double mystack::pop()
         newLast = last->previous;
         free(last);
         last = newLast;
+        numberOfEl--;
     }
     return result;
 }
@@ -57,9 +65,15 @@ void mystack::delall()
         newLast = last->previous;
         free(last);
         last = newLast;
+        numberOfEl = 0;
     }
 }
 
+
+long mystack::getNumberOfEl()
+{
+    return numberOfEl;
+}
 
 
 
