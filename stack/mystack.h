@@ -10,7 +10,7 @@ struct mystack
         struct mystackval* last = NULL;
         long numberOfEl;
     public:
-        mystack();
+        mystack(); //i have to
         double pop();
         int push(double a);
         void delall();
