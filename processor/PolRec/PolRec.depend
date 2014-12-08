@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1413994602 source:g:\למט פאיכû\c++\polrec\stack.c
+	"stack.h"
+
+1414007930 g:\למט פאיכû\c++\polrec\stack.h
+	<stdio.h>
+	<assert.h>
+	<stdbool.h>
+
+1414251234 source:g:\למט פאיכû\c++\polrec\main.cpp
+	<stdio.h>
+	"stacklib.h"
+
+1413994602 source:g:\למט פאיכû\c++\polrec\stack.cpp
+	"stack.h"
+
+1414004515 g:\למט פאיכû\c++\polrec\stacklib.h
+	<stdio.h>
+	<assert.h>
+	<stdbool.h>
+	<stdlib.h>
+
+1414004465 source:g:\למט פאיכû\c++\polrec\stacklib.cpp
+	"stacklib.h"
+

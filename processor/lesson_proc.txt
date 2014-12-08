@@ -1,0 +1,23 @@
+MOV AX 5 //AX = 5
+MOV BX AX //BX = AX
+
+JNE
+JE
+GL
+JB
+JMP
+
+
+for cycle
+MOV AX 0 //AX = 0
+1: PUSH AX  //[AX]
+PUSH 1   //[AX,1]
+ADD      //[AX+1]
+POP AX   //AX = AX + 1
+PUSH AX  //[AX]
+PUSH 10  //[AX, 10]
+SUB      //[AX - 10]
+CMP      //AX-10 ? 0
+JNE 1
+
+
